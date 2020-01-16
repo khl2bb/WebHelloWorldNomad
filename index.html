@@ -5,66 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=chrome">
-    <meta name="author" content="이진우" />
-    <title>디자인 실험</title> 
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="inoo" />
+    <title>크롬앱연습</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div id="container1">
-        <div id="arrowLeft">
-            <img src="img/arrowLeft.png" id="arrowLeft">
-        
+
+    <section class="center">
+        <div class="js-clock clock">
+            <h3 class="clock__text">00:00</h3>
         </div>
-
-        <!-- onclick="document.querySelector('#logoImg1').classList.add ('clicked');" -->
-        <div id="logoImg1" title="카카오로고">
-            
-            <div id="logoContent">kakao</div>
-
-        
+        <div class="js-name name"></div>
+        <div>
+            <form class="js-to-do to-do">
+                <input class="js-add-to-do to-do__add-to-do" placeholder="Write a To Do here" type="text" />
+            </form>
+            <ul class="js-list list"></ul>
         </div>
-        <div id="logoImg2" title="네이버로고">
+    </section>
 
-            <div id="logoContent">naver</div>
-
-        
-        </div>
-
-        <div id="arrowRight">
-            <img src="img/arrowRight.png" id="arrowRight">
-        
-        </div>
-
-        <div id="playButtonDiv">
-            <img src="img/playButton.png" id="playButton">
-
-        </div>
-
-        <div id="pauseButtonDiv">
-            <img src="img/pauseButton.png" id="pauseButton">
-
-        </div>
-
-
-
-    </div>
-    <div id="container2">
-        gd
-
-    </div>
-    <div id="container3">
-        <ul>
-            <li>
-                <a href=https://www.work.go.kr/seekWantedMain.do>워크넷</a>
-            </li>
-        </ul>
+    <div class="js-location location">
+        <span class="location__text"></span>
     </div>
 
-    <!-- <script src="js/banner.js"></script> -->
-    <script src="js/sample.js"></script>
+    <div class="js-weather weather">
+        <span class="weather__text"></span>
+    </div>
 
-
+    <script src="js/bg.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/toDo.js"></script>
 
 </body>
 
